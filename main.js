@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   function checkPressedButton(e) {
-    if (/[a-z]/.test(e.key)) {
+    if (/[a-z]/.test(e.key) && e.key.length <= 1) {
       return true
     }
     return false
